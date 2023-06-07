@@ -39,4 +39,3 @@ int main(){
 	}while(opc!='0');
 	return 0;
 }
-prueba jeje
