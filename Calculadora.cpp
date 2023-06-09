@@ -13,6 +13,9 @@ void menu(){
 void suma(int a,int b){
 	cout<<"\nLa suma resultante => "<<a+b<<endl;
 }
+ void multiplicacion(int a, int b){
+	cout<<"\nLa multiplicacion resultante => "<<a*b<<endl;
+	}
 int main(){
 	char opc=' ';
 	int a,b;
@@ -33,6 +36,16 @@ int main(){
 				suma(a,b);
 			};break;
 			
+			
+			case '3' : {
+				system("cls");
+				cout<<"\nIntroduzca el primer numero => ";
+				cin>>a;
+				cout<<"\nIntroduzca el segundo numero => ";
+				cin>>b;
+				multiplicacion(a,b);
+			};break;
+
 		}
 		system("PAUSE");
 		system("cls");
