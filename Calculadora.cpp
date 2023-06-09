@@ -15,7 +15,13 @@ void suma(int a,int b){
 }
  void multiplicacion(int a, int b){
 	cout<<"\nLa multiplicacion resultante => "<<a*b<<endl;
-	}
+}
+ void division(float a, float b){
+	cout<<"\nLa division resultante => "<<a/b<<endl;
+}
+ void resta(int a, int b){
+	cout<<"\nLa resta resultante => "<<a-b<<endl;
+}
 int main(){
 	char opc=' ';
 	int a,b;
@@ -34,7 +40,18 @@ int main(){
 				cout<<"\nIntroduzca el segundo numero => ";
 				cin>>b;
 				suma(a,b);
-			};break;
+				break;
+			}
+
+			case '2' : {
+				system("cls");
+				cout<<"\nIntroduzca el primer numero => ";
+				cin>>a;
+				cout<<"\nIntroduzca el segundo numero => ";
+				cin>>b;
+				resta(a,b);
+				break;
+			}
 			
 			
 			case '3' : {
@@ -44,7 +61,18 @@ int main(){
 				cout<<"\nIntroduzca el segundo numero => ";
 				cin>>b;
 				multiplicacion(a,b);
-			};break;
+				break;
+			}
+
+			case '4' : {
+				system("cls");
+				cout<<"\nIntroduzca el primer numero => ";
+				cin>>a;
+				cout<<"\nIntroduzca el segundo numero => ";
+				cin>>b;
+				division(a,b);
+				break;
+			}
 
 		}
 		system("PAUSE");
